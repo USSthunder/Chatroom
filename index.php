@@ -93,3 +93,14 @@ $(document).ready(function(){
 ?>
  Read More: How to Create a Simple Web-Based Chat Application
 <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
+<script type="text/javascript">
+// jQuery Document
+$(document).ready(function(){
+    //If user wants to end session
+    $("#exit").click(function(){
+        var exit = confirm("Are you sure you want to end the session?");
+        if(exit==true){window.location = 'index.php?logout=true';}      
+    });
+});
+</script>
+ Read More: How to Create a Simple Web-Based Chat Application
