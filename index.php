@@ -92,3 +92,4 @@ $(document).ready(function(){
 }
 ?>
  Read More: How to Create a Simple Web-Based Chat Application
+<p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
